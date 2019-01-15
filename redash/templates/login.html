@@ -29,7 +29,7 @@
     {% endif %}
 
     {% if show_ldap_login %}
-      <a href="{{ url_for('ldap_auth.login', next=next) }}" class="login-button btn btn-default btn-block">LDAP/SSO Login</a>
+      <a href="{{ url_for('ldap_auth.login', next=next) }}" class="login-button btn btn-default btn-block">Log in with TACC Credentials</a>
     {% endif %}
 
     {% if show_password_login %}
@@ -56,6 +56,7 @@
       </div>
     {% endif %}
     {% endif %}
+  <br>Note: You may need to visit the <a href="https://sd2e.org/accounts/request-access/"><b>Request Access</b></a> page before Redash is available to you.
   </div>
 </div>
 {% endblock %}
